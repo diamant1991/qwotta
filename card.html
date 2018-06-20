@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>QWOTTA.RU</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<meta name="theme-color" content="#021b94">
+	<meta name="msapplication-navbutton-color" content="#021b94">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#021b94">
+</head>
+<body>
+	<header class="header-inner header-card">
+		<div class="head">
+			<div class="burger">
+				<span></span>
+				<nav class="open">
+					<div class="nav-menu">
+						<div class="close"></div>
+
+						<ul>
+							<li><a href="#">Путешествия вдвоем</a></li>
+							<li><a href="#">Бизнес поездки</a></li>
+							<li><a href="#">Отдых с детьми</a></li>
+							<li><a href="#">Выставки, праздники</a></li>
+							<li><a href="#">Гарантии</a></li>
+							<li><a href="#">Условия оплаты</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Конфиденциальность</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+			<div class="top">
+				<div class="burger2">
+					<span></span>
+					<nav class="open">
+						<div class="nav-menu">
+							<div class="close"></div>
+
+							<ul>
+								<li><a href="#">Путешествия вдвоем</a></li>
+								<li><a href="#">Бизнес поездки</a></li>
+								<li><a href="#">Отдых с детьми</a></li>
+								<li><a href="#">Выставки, праздники</a></li>
+								<li><a href="#">Гарантии</a></li>
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Возврат</a></li>
+								<li><a href="#">Конфиденциальность</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+
+						</div>
+					</nav>
+				</div>
+
+				<div class="logo"><a href="#">QWOTTA.RU</a></div>
+
+				<div class="menu">
+
+					<ul>
+						<li><a href="#">Туристам<span></span></a></li>
+						<li><a href="#">Агентам<span></span></a></li>
+					</ul>
+
+				</div>
+				<div class="auth"><a href="">Войти<span></span></a></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="content content-listing">
+		<div class="container">
+			<div class="flex justify-content-between">
+				<div class="sidebar">
+					<div class="sidebar-filter">
+						<h2 class="sidebar-title">Поиск отеля</h2>
+						<form class="filter-form filter-form--sidebar">
+
+							<div class="form-group form-group--sidebar city">
+								Введите название города:
+								<div class="icon-map"></div>
+								<div class="inputc">
+									<input name="city" class="choose-city form-control" type="text" value="" placeholder="Амстердам" onfocus="this.select()">
+								</div>
+								или воспользуйтесь <a href="#">списком</a>
+							</div>
+
+							<div class="form-group form-group--sidebar date">
+								<span>Дата заезда</span><span class="rig">Дата выезда</span>
+								<div class="inputc">
+									<input id="datepicker" class="form-control start-date  date-picker" name="start-date" type="text" placeholder="11.04.2018">
+									<div class="calendar"></div>
+									<input id="datepicker2" class="form-control end-date  date-picker" name="end-date" type="text" placeholder="29.04.2018">
+								</div>
+							</div>
+
+							<div class="form-group form-group--sidebar siting">
+								Размещение:
+								<div class="icon-siting icon-siting--sidebar"></div>
+								<div class="inputc">
+									<input id="date-out" class="form-control hasDatepicker" type="text" placeholder="2 гостя, 1 номер">
+								</div>
+								<a href="#">другие варианты</a>
+							</div>
+							<div class="form-group form-group--sidebar form-group--rating">
+								<div class="rating-title">
+									Количество звёзд:
+								</div>
+								<div class="star-choice j-rating flex align-items-center justify-content-between">
+									<a href="#" class="filter-star" data-index="1"></a>
+									<a href="#" class="filter-star" data-index="2"></a>
+									<a href="#" class="filter-star" data-index="3"></a>
+									<a href="#" class="filter-star" data-index="4"></a>
+									<a href="#" class="filter-star" data-index="5"></a>
+									<input type="hidden" name="rating">
+								</div>
+							</div>
+
+              <div class="form-group-btn">
+                  <button class="button btn btn-full" type="button">Найти</button>
+              </div>
+
+            </form>
+
+					</div>
+					<div class="list-view tab-pane sidebar-map" style="background-image: url(img/map-big.jpg)">
+						<a href="#" class="mobile-numbers mobile-numbers--card button btn">Узнать стоимость и наличие мест</a>
+					</div>
+				</div>
+				<div class="center-content">
+					<div class="flex align-items-center justify-content-between">
+						<div>
+							<ul class="breadcrumb">
+								<li>
+									<a href="#">Главная</a>
+									<span class="breadcrumb-arrow">
+										<img src="img/arrow.png" class="hidden-991" alt="">
+										<img src="img/b-green.png" class="visible-991" alt="">
+									</span>
+								</li>
+								<li>
+									<a href="#">Отели</a>
+									<span class="breadcrumb-arrow">
+										<img src="img/arrow.png" class="hidden-991" alt="">
+										<img src="img/b-green.png" class="visible-991" alt="">
+									</span>
+								</li>
+								<li>
+									<a href="#">Нидерланды</a>
+									<span class="breadcrumb-arrow">
+										<img src="img/arrow.png" class="hidden-991" alt="">
+										<img src="img/b-green.png" class="visible-991" alt="">
+									</span>
+								</li>
+								<li>Амстердам</li>
+							</ul>
+							<h1 class="page-title page-title--card middle">NH GRAND KRASNAPOLSKY</h1>
+							<div class="b-review__form--rating small-rating rating-card middle clearfix">
+								<a href="#" class="b-review__form--star" data-index="1"></a>
+								<a href="#" class="b-review__form--star" data-index="2"></a>
+								<a href="#" class="b-review__form--star" data-index="3"></a>
+								<a href="#" class="b-review__form--star" data-index="4"></a>
+							</div>
+							<div class="subtitle subtitle--card">Deluxe Supreme, NH Hotels</div>
+						</div>
+						<a href="#" class="total-number total-number--price flex align-items-center">
+							<div>
+								<div class="price-icon"></div>
+								<div>
+									Узнать <br>стоимость
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<div class="card-place-title">Расположение</div>
+						<div class="card-place-info">
+							Район: City Center <br>
+							Адрес: Dam 9 , Amsterdam, Netherlands, 1012 JS
+						</div>
+						<div class="owl-carousel card-carousel" data-slider-id="1">
+							<div class="card-img flex align-items-center">
+					    	<div>
+					    		<img src="img/gallery.jpg" alt="">
+					    	</div>
+					    </div>
+					    <div class="card-img flex align-items-center">
+					    	<div>
+					    		<img src="img/gallery.jpg" alt="">
+					    	</div>
+					    </div>
+					    <div class="card-img flex align-items-center">
+					    	<div>
+					    		<img src="img/gallery.jpg" alt="">
+					    	</div>
+					    </div>
+					    <div class="card-img flex align-items-center">
+					    	<div>
+					    		<img src="img/gallery.jpg" alt="">
+					    	</div>
+					    </div>
+						</div>
+						<div class="owl-thumbs gallery-thumb" data-slider-id="1">
+					    <button class="owl-thumb-item">
+					    	<span class="card-thumb" style="background-image: url(img/gallery-thumb.jpg)"></span>
+					    </button>
+					    <button class="owl-thumb-item">
+					    	<span class="card-thumb" style="background-image: url(img/gallery-thumb.jpg)"></span>
+					    </button>
+					    <button class="owl-thumb-item">
+					    	<span class="card-thumb" style="background-image: url(img/gallery-thumb.jpg)"></span>
+					    </button>
+					    <button class="owl-thumb-item">
+					    	<span class="card-thumb" style="background-image: url(img/gallery-thumb.jpg)"></span>
+					    </button>
+						</div>
+						<div class="card-descr text-block">
+							<h3>Описание</h3>
+							<p>
+								Апартаменты класса люкс в NH Grand Krasnapolsky - это идеальный выбор для следующего незабываемого отпуска. Великолепное расположение и исключительное обслуживание обеспечит чудесный семейный отдых.
+							</p>
+							<ul>
+								<li>Спорт и развлечения: Выбор спортивных предложений и развлечений понравится и детям, и взрослым. Свежий воздух и прекрасные виды на общей террасе. В свободное время гостей ждут фитнес-студия и гимнастика. За дополнительную плату вам предложат сауну и массаж.</li>
+								<li>
+									Кредитные карточки: Следующие кредитные карты принимаются к оплате: American Express, Visa и MasterCard.
+								</li>
+							</ul>
+						</div>
+						<div class="card-info">
+							<div class="card-info__item">
+								<div class="card-info__header">
+									<div>В ОТЕЛЕ</div>
+								</div>
+								<div class="card-info__content flex align-items-center justify-content-between">
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-info__item">
+								<div class="card-info__header">
+									<div>В комнатах</div>
+								</div>
+								<div class="card-info__content flex align-items-center justify-content-between">
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+									<div class="card-info__content__item">
+										<div>Экологично</div>
+										<div>Внутренние коридоры</div>
+										<div>Обмен валюты</div>
+										<div>Магазин подарков / Галантерея</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer flex align-items-center justify-content-between">
+							<a href="#" class="button button--card">узнать стоимость и наличие мест</a>
+							<a href="#" class="link">Вернуться к списку отелей</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	<div class="popular">
+		<h2 class="block-title">Вам будет интересно</h2>
+		<div class="owl-carousel carousel-city">
+
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/dubrovnik.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Дубровник</span>
+							Хорватия
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Дубровник<span></span></div>
+							Хорватия
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/rio.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Рио Де Жанейро</span>
+							Бразилия
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Рио Де Жанейро<span></span></div>
+							Бразилия
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/telaviv.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Тель-Авив</span>
+							Израиль
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Тель-Авив<span></span></div>
+							Израиль
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/barcelona.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Барселона</span>
+							Испания
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Барселона<span></span></div>
+							Испания
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/tokyo.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Токио</span>
+							Япония
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Токио<span></span></div>
+							Япония
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/phuket.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Пхукент</span>
+							Тайланд
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Пхукент<span></span></div>
+							Тайланд
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="carousel-city-item">
+				<div class="carousel-city-image" style="background-image: url(img/slider/phuket.jpg)">
+					<div class="carousel-city-cont">
+						<div class="carousel-city-name">
+							<span>Пхукент</span>
+							Тайланд
+						</div>
+						<div class="carousel-city-hotel">
+							<span>2000</span>
+							отелей
+						</div>
+					</div>
+				</div>
+				<a href="#">
+					<div class="carousel-mask">
+						<div class="carousel-mask-city">
+							<img src="img/slider/iconm.png">
+							<div class="cname">Пхукент<span></span></div>
+							Тайланд
+							<span class="find">найти отель</span>
+						</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer-cont">
+		<div class="contacts">
+			<div class="phone">
+				+7 (800) 777-04-25 <br> +7 (495) 108-74-85
+			</div>
+			<p>с 10 до 19 ежедневно</p>
+			<p class="copyright">© 2014—2018, Qwotta.ru</p>
+		</div>
+		<div class="partners">
+			<p>Партнер в России <br> ООО "Отельдискаунт"</p>
+			<p>Qwotta LP  <br>
+			SL028538 272 Bath Street,  <br>
+			Glasgow, G2 4JR, Scotland, UK</p>
+		</div>
+		<div class="footer-menu">
+			<ul>
+				<li><a href="#">Путешествия вдвоем</a></li>
+				<li><a href="#">Бизнес поездки</a></li>
+				<li><a href="#">Отдых с детьми</a></li>
+				<li><a href="#">Выставки, праздники</a></li>
+			</ul>
+		</div>
+		<div class="footer-menu2">
+			<ul>
+				<li><a href="#">Гарантии</a></li>
+				<li><a href="#">Условия оплаты</a></li>
+				<li><a href="#">Возврат</a></li>
+				<li><a href="#">Конфиденциальность</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="last">
+			<div class="card">
+				<span class="visac"></span>
+				<span class="mast"></span>
+				<span class="qiwi"></span>
+				<span class="travel"></span>
+			</div>
+			<div class="design"><span></span><a href="http://siart.pro/" target="_blank">Разработка <br>сайта</a></div>
+		</div>
+	</div>
+</footer>
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/owl.carousel2.thumbs.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
